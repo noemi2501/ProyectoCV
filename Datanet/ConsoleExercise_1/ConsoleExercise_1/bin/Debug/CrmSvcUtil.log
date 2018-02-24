@@ -1,0 +1,347 @@
+Microsoft.Xrm.Tooling.Connector.CrmServiceClient Error: 2 : Source	: System.ServiceModel
+Method	: Retrieve
+Date	: 24/02/2018
+Time	: 0:28:58
+Error	: Los metadatos contienen una referencia que no se puede resolver: 'https://devcrm.crm4.dynamics.com/_common/error/errorhandler.aspx?BackUri=&ErrorCode=&Parm0=%0d%0a%0d%0aتفاصيل الخطأ: The service '%2fXRMServices%2f2011%2fDiscovery.svc' cannot be activated due to an exception during compilation.  The exception message is: Could not load file or assembly 'Microsoft.Crm.Site.Services%2c Version%3d8.0.0.0%2c Culture%3dneutral%2c PublicKeyToken%3d31bf3856ad364e35' or one of its dependencies. The system cannot find the file specified..&RequestUri=%2fXRMServices%2f2011%2fDiscovery.svc%3fwsdl%26sdkversion%3d82&user_lcid=1025'.
+Stack Trace	: en System.ServiceModel.Description.MetadataExchangeClient.MetadataRetriever.Retrieve(TimeoutHelper timeoutHelper)
+   en System.ServiceModel.Description.MetadataExchangeClient.ResolveNext(ResolveCallState resolveCallState)
+   en System.ServiceModel.Description.MetadataExchangeClient.GetMetadata(MetadataRetriever retriever)
+   en System.ServiceModel.Description.MetadataExchangeClient.GetMetadata(Uri address, MetadataExchangeClientMode mode)
+   en Microsoft.Xrm.Sdk.Client.ServiceMetadataUtility.RetrieveServiceEndpointMetadata(Type contractType, Uri serviceUri, Boolean checkForSecondary)
+   en Microsoft.Xrm.Sdk.Client.ServiceConfiguration`1..ctor(Uri serviceUri, Boolean checkForSecondary)
+   en Microsoft.Xrm.Sdk.Client.ServiceConfigurationFactory.CreateManagement[TService](Uri serviceUri, Boolean enableProxyTypes, Assembly assembly)
+   en Microsoft.Xrm.Sdk.Client.ServiceConfigurationFactory.CreateManagement[TService](Uri serviceUri)
+   en Microsoft.Xrm.Tooling.Connector.CrmWebSvc.CreateAndAuthenticateProxy[T](IServiceManagement`1 servicecfg, Uri ServiceUri, Uri homeRealm, ClientCredentials userCredentials, ClientCredentials deviceCredentials, String LogString)
+   en Microsoft.Xrm.Tooling.Connector.CrmWebSvc.DiscoverOrganizations(Uri discoveryServiceUri, Uri homeRealmUri, ClientCredentials clientCredentials, ClientCredentials deviceCredentials)
+   en Microsoft.Xrm.Tooling.Connector.CrmWebSvc.DiscoverOrganizations(Uri discoveryServiceUri, Uri homeRealmUri, NetworkCredential networkCredential)
+   en Microsoft.Xrm.Tooling.Connector.CrmWebSvc.InitCRM2011Service()
+======================================================================================================================
+Inner Exception Level 1	: 
+Source	: System.Runtime.Serialization
+Method	: ThrowXmlException
+Date	: 24/02/2018
+Time	: 0:28:58
+Error	: Los elementos CData no son válidos en el nivel superior de un documento XML. Línea 1, posición 3.
+Stack Trace	: en System.Xml.XmlExceptionHelper.ThrowXmlException(XmlDictionaryReader reader, XmlException exception)
+   en System.Xml.XmlUTF8TextReader.Read()
+   en System.ServiceModel.Description.MetadataExchangeClient.MetadataLocationRetriever.GetXmlReader(HttpWebResponse response, Int64 maxMessageSize, XmlDictionaryReaderQuotas readerQuotas)
+   en System.ServiceModel.Description.MetadataExchangeClient.MetadataLocationRetriever.DownloadMetadata(TimeoutHelper timeoutHelper)
+   en System.ServiceModel.Description.MetadataExchangeClient.MetadataRetriever.Retrieve(TimeoutHelper timeoutHelper)
+======================================================================================================================
+
+Microsoft.Xrm.Tooling.Connector.CrmServiceClient Error: 2 : Unable to Login to Dynamics CRM
+Microsoft.Xrm.Tooling.Connector.CrmServiceClient Error: 2 : Source	: System.ServiceModel
+Method	: Retrieve
+Date	: 24/02/2018
+Time	: 0:30:33
+Error	: Los metadatos contienen una referencia que no se puede resolver: 'https://devcrm.crm4.dynamics.com/_common/error/errorhandler.aspx?BackUri=&ErrorCode=&Parm0=%0d%0a%0d%0aتفاصيل الخطأ: The service '%2fXRMServices%2f2011%2fDiscovery.svc' cannot be activated due to an exception during compilation.  The exception message is: Could not load file or assembly 'Microsoft.Crm.Site.Services%2c Version%3d8.0.0.0%2c Culture%3dneutral%2c PublicKeyToken%3d31bf3856ad364e35' or one of its dependencies. The system cannot find the file specified..&RequestUri=%2fXRMServices%2f2011%2fDiscovery.svc%3fwsdl%26sdkversion%3d82&user_lcid=1025'.
+Stack Trace	: en System.ServiceModel.Description.MetadataExchangeClient.MetadataRetriever.Retrieve(TimeoutHelper timeoutHelper)
+   en System.ServiceModel.Description.MetadataExchangeClient.ResolveNext(ResolveCallState resolveCallState)
+   en System.ServiceModel.Description.MetadataExchangeClient.GetMetadata(MetadataRetriever retriever)
+   en System.ServiceModel.Description.MetadataExchangeClient.GetMetadata(Uri address, MetadataExchangeClientMode mode)
+   en Microsoft.Xrm.Sdk.Client.ServiceMetadataUtility.RetrieveServiceEndpointMetadata(Type contractType, Uri serviceUri, Boolean checkForSecondary)
+   en Microsoft.Xrm.Sdk.Client.ServiceConfiguration`1..ctor(Uri serviceUri, Boolean checkForSecondary)
+   en Microsoft.Xrm.Sdk.Client.ServiceConfigurationFactory.CreateManagement[TService](Uri serviceUri, Boolean enableProxyTypes, Assembly assembly)
+   en Microsoft.Xrm.Sdk.Client.ServiceConfigurationFactory.CreateManagement[TService](Uri serviceUri)
+   en Microsoft.Xrm.Tooling.Connector.CrmWebSvc.CreateAndAuthenticateProxy[T](IServiceManagement`1 servicecfg, Uri ServiceUri, Uri homeRealm, ClientCredentials userCredentials, ClientCredentials deviceCredentials, String LogString)
+   en Microsoft.Xrm.Tooling.Connector.CrmWebSvc.DiscoverOrganizations(Uri discoveryServiceUri, Uri homeRealmUri, ClientCredentials clientCredentials, ClientCredentials deviceCredentials)
+   en Microsoft.Xrm.Tooling.Connector.CrmWebSvc.DiscoverOrganizations(Uri discoveryServiceUri, Uri homeRealmUri, NetworkCredential networkCredential)
+   en Microsoft.Xrm.Tooling.Connector.CrmWebSvc.InitCRM2011Service()
+======================================================================================================================
+Inner Exception Level 1	: 
+Source	: System.Runtime.Serialization
+Method	: ThrowXmlException
+Date	: 24/02/2018
+Time	: 0:30:33
+Error	: Los elementos CData no son válidos en el nivel superior de un documento XML. Línea 1, posición 3.
+Stack Trace	: en System.Xml.XmlExceptionHelper.ThrowXmlException(XmlDictionaryReader reader, XmlException exception)
+   en System.Xml.XmlUTF8TextReader.Read()
+   en System.ServiceModel.Description.MetadataExchangeClient.MetadataLocationRetriever.GetXmlReader(HttpWebResponse response, Int64 maxMessageSize, XmlDictionaryReaderQuotas readerQuotas)
+   en System.ServiceModel.Description.MetadataExchangeClient.MetadataLocationRetriever.DownloadMetadata(TimeoutHelper timeoutHelper)
+   en System.ServiceModel.Description.MetadataExchangeClient.MetadataRetriever.Retrieve(TimeoutHelper timeoutHelper)
+======================================================================================================================
+
+Microsoft.Xrm.Tooling.Connector.CrmServiceClient Error: 2 : Unable to Login to Dynamics CRM
+Microsoft.Xrm.Tooling.Connector.CrmServiceClient Error: 2 : Source	: System.ServiceModel
+Method	: Retrieve
+Date	: 24/02/2018
+Time	: 0:31:08
+Error	: Los metadatos contienen una referencia que no se puede resolver: 'https://devcrm.crm4.dynamics.com/_common/error/errorhandler.aspx?BackUri=&ErrorCode=&Parm0=%0d%0a%0d%0aتفاصيل الخطأ: The service '%2fXRMServices%2f2011%2fDiscovery.svc' cannot be activated due to an exception during compilation.  The exception message is: Could not load file or assembly 'Microsoft.Crm.Site.Services%2c Version%3d8.0.0.0%2c Culture%3dneutral%2c PublicKeyToken%3d31bf3856ad364e35' or one of its dependencies. The system cannot find the file specified..&RequestUri=%2fXRMServices%2f2011%2fDiscovery.svc%3fwsdl%26sdkversion%3d82&user_lcid=1025'.
+Stack Trace	: en System.ServiceModel.Description.MetadataExchangeClient.MetadataRetriever.Retrieve(TimeoutHelper timeoutHelper)
+   en System.ServiceModel.Description.MetadataExchangeClient.ResolveNext(ResolveCallState resolveCallState)
+   en System.ServiceModel.Description.MetadataExchangeClient.GetMetadata(MetadataRetriever retriever)
+   en System.ServiceModel.Description.MetadataExchangeClient.GetMetadata(Uri address, MetadataExchangeClientMode mode)
+   en Microsoft.Xrm.Sdk.Client.ServiceMetadataUtility.RetrieveServiceEndpointMetadata(Type contractType, Uri serviceUri, Boolean checkForSecondary)
+   en Microsoft.Xrm.Sdk.Client.ServiceConfiguration`1..ctor(Uri serviceUri, Boolean checkForSecondary)
+   en Microsoft.Xrm.Sdk.Client.ServiceConfigurationFactory.CreateManagement[TService](Uri serviceUri, Boolean enableProxyTypes, Assembly assembly)
+   en Microsoft.Xrm.Sdk.Client.ServiceConfigurationFactory.CreateManagement[TService](Uri serviceUri)
+   en Microsoft.Xrm.Tooling.Connector.CrmWebSvc.CreateAndAuthenticateProxy[T](IServiceManagement`1 servicecfg, Uri ServiceUri, Uri homeRealm, ClientCredentials userCredentials, ClientCredentials deviceCredentials, String LogString)
+   en Microsoft.Xrm.Tooling.Connector.CrmWebSvc.DiscoverOrganizations(Uri discoveryServiceUri, Uri homeRealmUri, ClientCredentials clientCredentials, ClientCredentials deviceCredentials)
+   en Microsoft.Xrm.Tooling.Connector.CrmWebSvc.DiscoverOrganizations(Uri discoveryServiceUri, Uri homeRealmUri, NetworkCredential networkCredential)
+   en Microsoft.Xrm.Tooling.Connector.CrmWebSvc.InitCRM2011Service()
+======================================================================================================================
+Inner Exception Level 1	: 
+Source	: System.Runtime.Serialization
+Method	: ThrowXmlException
+Date	: 24/02/2018
+Time	: 0:31:08
+Error	: Los elementos CData no son válidos en el nivel superior de un documento XML. Línea 1, posición 3.
+Stack Trace	: en System.Xml.XmlExceptionHelper.ThrowXmlException(XmlDictionaryReader reader, XmlException exception)
+   en System.Xml.XmlUTF8TextReader.Read()
+   en System.ServiceModel.Description.MetadataExchangeClient.MetadataLocationRetriever.GetXmlReader(HttpWebResponse response, Int64 maxMessageSize, XmlDictionaryReaderQuotas readerQuotas)
+   en System.ServiceModel.Description.MetadataExchangeClient.MetadataLocationRetriever.DownloadMetadata(TimeoutHelper timeoutHelper)
+   en System.ServiceModel.Description.MetadataExchangeClient.MetadataRetriever.Retrieve(TimeoutHelper timeoutHelper)
+======================================================================================================================
+
+Microsoft.Xrm.Tooling.Connector.CrmServiceClient Error: 2 : Unable to Login to Dynamics CRM
+Microsoft.Xrm.Tooling.Connector.CrmServiceClient Error: 2 : Source	: mscorlib
+Method	: HandleReturnMessage
+Date	: 24/02/2018
+Time	: 8:52:12
+Error	: Se recibió un error no seguro o protegido incorrectamente de la otra parte. Consulte la excepción FaultException interna para ver el código del error y obtener más información.
+Stack Trace	: Server stack trace: 
+   en System.ServiceModel.Channels.SecurityChannelFactory`1.SecurityRequestChannel.ProcessReply(Message reply, SecurityProtocolCorrelationState correlationState, TimeSpan timeout)
+   en System.ServiceModel.Channels.SecurityChannelFactory`1.SecurityRequestChannel.Request(Message message, TimeSpan timeout)
+   en System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   en System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   en System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   en System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   en System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   en System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   en System.ServiceModel.Security.IWSTrustContract.Issue(Message message)
+   en System.ServiceModel.Security.WSTrustChannel.Issue(RequestSecurityToken rst, RequestSecurityTokenResponse& rstr)
+   en Microsoft.Xrm.Sdk.Client.ServiceConfiguration`1.Issue(AuthenticationCredentials authenticationCredentials)
+   en Microsoft.Xrm.Sdk.Client.ServiceConfiguration`1.AuthenticateInternal(AuthenticationCredentials authenticationCredentials)
+   en Microsoft.Xrm.Sdk.Client.ServiceConfiguration`1.AuthenticateTokenWithOrgIdForCrm(AuthenticationCredentials authenticationCredentials)
+   en Microsoft.Xrm.Sdk.Client.ServiceConfiguration`1.AuthenticateOnlineFederationInternal(AuthenticationCredentials authenticationCredentials)
+   en Microsoft.Xrm.Sdk.Client.ServiceConfiguration`1.Authenticate(AuthenticationCredentials authenticationCredentials)
+   en Microsoft.Xrm.Sdk.Client.DiscoveryServiceConfiguration.Authenticate(AuthenticationCredentials authenticationCredentials)
+   en Microsoft.Xrm.Tooling.Connector.CrmWebSvc.ClaimsIFDFailOverAuth[T](IServiceManagement`1 servicecfg, Uri homeRealm, ClientCredentials userCredentials, ClientCredentials deviceCredentials, Int32 depthLevel, Boolean tryNetworkCred)
+   en Microsoft.Xrm.Tooling.Connector.CrmWebSvc.CreateAndAuthenticateProxy[T](IServiceManagement`1 servicecfg, Uri ServiceUri, Uri homeRealm, ClientCredentials userCredentials, ClientCredentials deviceCredentials, String LogString)
+   en Microsoft.Xrm.Tooling.Connector.CrmWebSvc.DiscoverOrganizations(Uri discoveryServiceUri, Uri homeRealmUri, ClientCredentials clientCredentials, ClientCredentials deviceCredentials)
+   en Microsoft.Xrm.Tooling.Connector.CrmWebSvc.QueryLiveDiscoveryServer(Uri discoServer)
+   en Microsoft.Xrm.Tooling.Connector.CrmWebSvc.FindCrmOnlineDiscoveryServer(CrmOnlineDiscoveryServers onlineServerList, Boolean useO365Servers)
+   en Microsoft.Xrm.Tooling.Connector.CrmWebSvc.InitCRM2011Service()
+======================================================================================================================
+Inner Exception Level 1	: 
+Source	: Not Provided
+Method	: Not Provided
+Date	: 24/02/2018
+Time	: 8:52:12
+Error	: Authentication Failure
+Stack Trace	: Not Provided
+======================================================================================================================
+
+Microsoft.Xrm.Tooling.Connector.CrmServiceClient Error: 2 : Unable to Login to Dynamics CRM
+Microsoft.Xrm.Tooling.Connector.CrmServiceClient Error: 2 : Source	: mscorlib
+Method	: HandleReturnMessage
+Date	: 24/02/2018
+Time	: 9:52:50
+Error	: Message: The entity with a name = 'cuentas' was not found in the MetadataCache.
+ErrorCode: -2147217150
+Trace: 
+Stack Trace	: Server stack trace: 
+   en System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   en System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   en System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   en System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   en System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   en System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   en Microsoft.Xrm.Sdk.IOrganizationService.Execute(OrganizationRequest request)
+   en Microsoft.Xrm.Sdk.Client.OrganizationServiceProxy.ExecuteCore(OrganizationRequest request)
+   en Microsoft.Xrm.Sdk.Client.OrganizationServiceProxy.Execute(OrganizationRequest request)
+   en Microsoft.Xrm.Tooling.Connector.CrmServiceClient.CrmCommand_Execute(OrganizationRequest req, String errorStringCheck)
+======================================================================================================================
+
+Microsoft.Xrm.Tooling.Connector.CrmServiceClient Error: 2 : Source	: mscorlib
+Method	: HandleReturnMessage
+Date	: 24/02/2018
+Time	: 9:52:50
+Error	: Message: The entity with a name = 'cuentas' was not found in the MetadataCache.
+ErrorCode: -2147217150
+Trace: 
+Stack Trace	: Server stack trace: 
+   en System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   en System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   en System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   en System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   en System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   en System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   en Microsoft.Xrm.Sdk.IOrganizationService.Execute(OrganizationRequest request)
+   en Microsoft.Xrm.Sdk.Client.OrganizationServiceProxy.ExecuteCore(OrganizationRequest request)
+   en Microsoft.Xrm.Sdk.Client.OrganizationServiceProxy.Execute(OrganizationRequest request)
+   en Microsoft.Xrm.Tooling.Connector.CrmServiceClient.CrmCommand_Execute(OrganizationRequest req, String errorStringCheck)
+======================================================================================================================
+
+Microsoft.Xrm.Tooling.Connector.CrmServiceClient Error: 2 : Source	: mscorlib
+Method	: HandleReturnMessage
+Date	: 24/02/2018
+Time	: 9:55:02
+Error	: Message: The entity with a name = 'cuentas' was not found in the MetadataCache.
+ErrorCode: -2147217150
+Trace: 
+Stack Trace	: Server stack trace: 
+   en System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   en System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   en System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   en System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   en System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   en System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   en Microsoft.Xrm.Sdk.IOrganizationService.Execute(OrganizationRequest request)
+   en Microsoft.Xrm.Sdk.Client.OrganizationServiceProxy.ExecuteCore(OrganizationRequest request)
+   en Microsoft.Xrm.Sdk.Client.OrganizationServiceProxy.Execute(OrganizationRequest request)
+   en Microsoft.Xrm.Tooling.Connector.CrmServiceClient.CrmCommand_Execute(OrganizationRequest req, String errorStringCheck)
+======================================================================================================================
+
+Microsoft.Xrm.Tooling.Connector.CrmServiceClient Error: 2 : Source	: mscorlib
+Method	: HandleReturnMessage
+Date	: 24/02/2018
+Time	: 9:55:02
+Error	: Message: The entity with a name = 'cuentas' was not found in the MetadataCache.
+ErrorCode: -2147217150
+Trace: 
+Stack Trace	: Server stack trace: 
+   en System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   en System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   en System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   en System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   en System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   en System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   en Microsoft.Xrm.Sdk.IOrganizationService.Execute(OrganizationRequest request)
+   en Microsoft.Xrm.Sdk.Client.OrganizationServiceProxy.ExecuteCore(OrganizationRequest request)
+   en Microsoft.Xrm.Sdk.Client.OrganizationServiceProxy.Execute(OrganizationRequest request)
+   en Microsoft.Xrm.Tooling.Connector.CrmServiceClient.CrmCommand_Execute(OrganizationRequest req, String errorStringCheck)
+======================================================================================================================
+
+Microsoft.Xrm.Tooling.Connector.CrmServiceClient Error: 2 : Source	: mscorlib
+Method	: HandleReturnMessage
+Date	: 24/02/2018
+Time	: 10:03:48
+Error	: Message: The entity with a name = 'cuenta' was not found in the MetadataCache.
+ErrorCode: -2147217150
+Trace: 
+Stack Trace	: Server stack trace: 
+   en System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   en System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   en System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   en System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   en System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   en System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   en Microsoft.Xrm.Sdk.IOrganizationService.Execute(OrganizationRequest request)
+   en Microsoft.Xrm.Sdk.Client.OrganizationServiceProxy.ExecuteCore(OrganizationRequest request)
+   en Microsoft.Xrm.Sdk.Client.OrganizationServiceProxy.Execute(OrganizationRequest request)
+   en Microsoft.Xrm.Tooling.Connector.CrmServiceClient.CrmCommand_Execute(OrganizationRequest req, String errorStringCheck)
+======================================================================================================================
+
+Microsoft.Xrm.Tooling.Connector.CrmServiceClient Error: 2 : Source	: mscorlib
+Method	: HandleReturnMessage
+Date	: 24/02/2018
+Time	: 10:03:49
+Error	: Message: The entity with a name = 'cuenta' was not found in the MetadataCache.
+ErrorCode: -2147217150
+Trace: 
+Stack Trace	: Server stack trace: 
+   en System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   en System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   en System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   en System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   en System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   en System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   en Microsoft.Xrm.Sdk.IOrganizationService.Execute(OrganizationRequest request)
+   en Microsoft.Xrm.Sdk.Client.OrganizationServiceProxy.ExecuteCore(OrganizationRequest request)
+   en Microsoft.Xrm.Sdk.Client.OrganizationServiceProxy.Execute(OrganizationRequest request)
+   en Microsoft.Xrm.Tooling.Connector.CrmServiceClient.CrmCommand_Execute(OrganizationRequest req, String errorStringCheck)
+======================================================================================================================
+
+Microsoft.Xrm.Tooling.Connector.CrmServiceClient Error: 2 : Source	: mscorlib
+Method	: HandleReturnMessage
+Date	: 24/02/2018
+Time	: 10:06:50
+Error	: Message: The entity with a name = 'ventas' was not found in the MetadataCache.
+ErrorCode: -2147217150
+Trace: 
+Stack Trace	: Server stack trace: 
+   en System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   en System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   en System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   en System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   en System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   en System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   en Microsoft.Xrm.Sdk.IOrganizationService.Execute(OrganizationRequest request)
+   en Microsoft.Xrm.Sdk.Client.OrganizationServiceProxy.ExecuteCore(OrganizationRequest request)
+   en Microsoft.Xrm.Sdk.Client.OrganizationServiceProxy.Execute(OrganizationRequest request)
+   en Microsoft.Xrm.Tooling.Connector.CrmServiceClient.CrmCommand_Execute(OrganizationRequest req, String errorStringCheck)
+======================================================================================================================
+
+Microsoft.Xrm.Tooling.Connector.CrmServiceClient Error: 2 : Source	: mscorlib
+Method	: HandleReturnMessage
+Date	: 24/02/2018
+Time	: 10:06:50
+Error	: Message: The entity with a name = 'ventas' was not found in the MetadataCache.
+ErrorCode: -2147217150
+Trace: 
+Stack Trace	: Server stack trace: 
+   en System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   en System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   en System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   en System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   en System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   en System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   en Microsoft.Xrm.Sdk.IOrganizationService.Execute(OrganizationRequest request)
+   en Microsoft.Xrm.Sdk.Client.OrganizationServiceProxy.ExecuteCore(OrganizationRequest request)
+   en Microsoft.Xrm.Sdk.Client.OrganizationServiceProxy.Execute(OrganizationRequest request)
+   en Microsoft.Xrm.Tooling.Connector.CrmServiceClient.CrmCommand_Execute(OrganizationRequest req, String errorStringCheck)
+======================================================================================================================
+
+Microsoft.Xrm.Tooling.Connector.CrmServiceClient Error: 2 : OrganizationWebProxyClient is null
+Microsoft.Xrm.Tooling.Connector.CrmServiceClient Error: 2 : OrganizationWebProxyClient is null
+Microsoft.Xrm.Tooling.Connector.CrmServiceClient Error: 2 : OrganizationWebProxyClient is null
+Microsoft.Xrm.Tooling.Connector.CrmServiceClient Error: 2 : Source	: mscorlib
+Method	: HandleReturnMessage
+Date	: 24/02/2018
+Time	: 16:03:29
+Error	: Message: 'Account' entity doesn't contain attribute with Name = 'Name'.
+ErrorCode: -2147217149
+Trace: 
+Stack Trace	: Server stack trace: 
+   en System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   en System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   en System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   en System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   en System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   en System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   en Microsoft.Xrm.Sdk.IOrganizationService.Execute(OrganizationRequest request)
+   en Microsoft.Xrm.Sdk.Client.OrganizationServiceProxy.ExecuteCore(OrganizationRequest request)
+   en Microsoft.Xrm.Sdk.Client.OrganizationServiceProxy.Execute(OrganizationRequest request)
+   en Microsoft.Xrm.Tooling.Connector.CrmServiceClient.CrmCommand_Execute(OrganizationRequest req, String errorStringCheck)
+======================================================================================================================
+Inner Exception Level 1	: 
+==OrganizationServiceFault Info=======================================================================================
+Error	: 'Account' entity doesn't contain attribute with Name = 'Name'.
+Time	: 24/02/2018 15:03:29
+ErrorCode	: -2147217149
+Date	: 24/02/2018
+Time	: 16:03:29
+Trace	: Not Provided
+======================================================================================================================
+
