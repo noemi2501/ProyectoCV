@@ -1,0 +1,109 @@
+﻿
+@using Microsoft.Xrm.Sdk;
+@using Microsoft.Xrm.Sdk.Query;
+@using Microsoft.Xrm.Sdk.Client;
+@using Microsoft.Xrm.Sdk.WebServiceClient;
+@using Microsoft.Xrm.Tooling.Connector;
+
+@{
+	string connectionString = "AuthType = Office365; Url = https://devcrm.crm4.dynamics.com; Username=usuario@UNOAUNO.onmicrosoft.com; Password=Muza7686";
+	CrmServiceClient crmService = new CrmServiceClient(connectionString);
+	OrganizationServiceContext context = new OrganizationServiceContext(crmService);
+	IOrganizationService crmService2 = crmService.OrganizationServiceProxy;
+	QueryExpression query = new QueryExpression { EntityName = "account", ColumnSet = new ColumnSet(new string[] { "name", "telephone1", "emailaddress1" }) };
+
+	EntityCollection account = crmService.RetrieveMultiple(query);
+	int i = 0;
+}
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Cuentas CRM</title>
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="~/css/bootstrap.min.css">
+
+	<link href="~/css/Estilos.css" rel="stylesheet">
+	<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+</head>
+<body>
+	<div class="container-fluid">
+		<nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+			<a class="navbar-brand" href="#"><h3 class="panel-title">Cuentas</h3></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"><span class="navbar-toggler-icon"></span></button>
+			<div class="collapse navbar-collapse" id="collapsibleNavbar">
+				<ul class="navbar nav">
+					<li class="nav-item"><a class="nav-link" href="#Tabla">Table</a></li>
+					<li class="nav-item"><a href ="#" class="nav-link" data-toggle="modal" data-target="#miModal">About</a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<div id="Tabla" class="panel panel-primary panel">
+			<div class="panel panel-heading">
+
+			</div>
+			<div class="table-responsive">
+				<table class="table table-striped table-hover table-active">
+					<thead>
+						<tr class="cabecera">
+							<th><input type="text" class="form-control" placeholder="#" disabled /></th>
+							<th><input type="text" class="form-control" placeholder="Nombre" disabled /></th>
+							<th><input type="text" class="form-control" placeholder="Teléfono" disabled /></th>
+							<th><input type="text" class="form-control" placeholder="E-mail" disabled /></th>
+						</tr>
+					</thead>
+					<tbody>
+						@{foreach (var count in account.Entities)
+							{
+								string nombre = count.GetAttributeValue<string>("name");
+								string telefono = !string.IsNullOrEmpty(count.GetAttributeValue<string>("telephone1")) ? count.GetAttributeValue<string>("telephone1") : "N/D";
+								string email = !string.IsNullOrEmpty(count.GetAttributeValue<string>("emailaddress1")) ? count.GetAttributeValue<string>("emailaddress1") : "N/D";
+								i++;
+								<tr>
+									<td class="success">@i</td>
+									<td>@nombre</td>
+									<td>@telefono</td>
+									<td>@email</td>
+								</tr>
+							}
+						}
+
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div class="container-fluid">
+			<div class="row text-center">
+				<div class="col-md-12">
+					&copy; 2018 <span>Noemí Gómez Saez</span>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<div class="modal fade" id="miModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title" id="myModalLabel">Linkedn</h4>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+
+				</div>
+				<div class="modal-body">
+					<div class="LI-profile-badge" data-version="v1" data-size="medium" data-locale="es_ES" data-type="horizontal" data-theme="dark" data-vanity="noemi-gomez-2145871a"><a class="LI-simple-link" href='https://es.linkedin.com/in/noemi-gomez-2145871a?trk=profile-badge'>Noemi Gomez</a></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+</body>
+</html>

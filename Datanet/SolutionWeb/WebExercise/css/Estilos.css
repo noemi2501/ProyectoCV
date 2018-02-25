@@ -1,0 +1,41 @@
+﻿body {
+	padding-top: 100px;
+	position: relative;
+	background-color: beige;
+}
+
+.panel {
+	margin: 0 auto;
+}
+.panel .cabecera input[disabled] {
+	background-color: transparent;
+	border: none;
+	cursor: auto;
+	box-shadow: none;
+	padding: 0;
+	height: auto;
+	}
+	.panel .cabecera input[disabled]::-webkit-input-placeholder {
+		color: cadetblue;
+	}
+	.panel .cabecera input[disabled]::-moz-placeholder {
+		color: cadetblue;
+	}
+	.panel .cabecera input[disabled]:-ms-input-placeholder {
+		color: cadetblue;
+	}
+.table {
+	margin: 0 auto;
+	width: 80%;
+}
+.LI-profile-badge {
+	position: relative !important;
+	left: 20% !important;
+}
+
+a:hover {
+	color: beige;
+}
+a {
+	color: crimson;
+}
